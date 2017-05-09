@@ -1,20 +1,22 @@
-class ListaNegociacoes{
-  constructor(armadilha){
-    this._negociacoes = [];
-    this._armadilha = armadilha;
-  }
+class ListaNegociacoes {
 
-  adiciona(negociacao){
-    this._negociacoes.push(negociacao);
-    this._armadilha(this);
-  }
+    constructor() {
+        
+        this._negociacoes = [];
+    }
 
-  get negociacoes(){
-    return [].concat(this._negociacoes);
-  }
+    adiciona(negociacao) {
+        
+        this._negociacoes.push(negociacao);
+    }
 
-  esvazia(){
-    this._negociacoes = [];
-    this._armadilha(this);
-  }
+    get negociacoes() {
+        
+        return [].concat(this._negociacoes);
+    }
+
+    esvazia() {
+        
+        this._negociacoes = [];
+    }
 }
